@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #ffee93;
+}
+
+h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#sounds {
+    margin: 2rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.sound {
+    display: inline-block;
+}
+
+.button {
+    font-weight: 600;
+    text-align: center;
+    border: 4px solid black;
+    font-size: 1rem;
+    background-color: hsl(192, 43%, 70%);
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 42px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: hsl(192, 43%, 50%);
+    border-color: #161a1d;
+    color: #f6f6ff;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: hsl(192, 43%, 80%);
+    border-color: #0b090a;
+    color: black;
+    position: relative;
+    top: 2px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+#stopButton {
+    border: 4px solid black;
+    font-size: 1rem;
+    background-color: #ba181b;
+    padding: 0.7rem;
+    width: 80%;
+    color: #f5f3f4;
+    border-radius: 42px;
+    transition: all 0.2s ease-in-out;
+}
+
+#stopButton:hover {
+    background-color: #e5383b;
+    border-color: #161a1d;
+    color: #fff;
+    cursor: pointer;
+}
+
+#stopButton:active {
+    background-color: #660708;
+    border-color: #0b090a;
+    color: #d3d3d3;
+    position: relative;
+    top: 2px;
+}
